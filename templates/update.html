@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+      <div class="row">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+              <form action="/up" method="post">
+                  <table class="table">
+                      <tr>
+                          <td>Mobile Number</td>
+                          <td> <input type="text" name="mobnumber" class="form-control"></td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td><button type="submit" class="btn btn-success">Search</button></td>
+                      </tr>
+                  </table>
+              </form>
+           </div>
+      </div>
+  </div>
+  {% endblock %}
+    

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <form action="/update" method="post">
+                <table class="table">
+                    <tr>
+                        <td>Mobile Number</td>
+                        <td> <input type="number" name="mobnumber" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td> <input type="text" name="name" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td> <input type="number" name="age" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td> <input type="text" name="address" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td> <input type="date" name="dob" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>Place</td>
+                        <td> <input type="text" name="place" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td>Pincode</td>
+                        <td> <input type="number" name="pincode" class="form-control"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" class="btn btn-primary">Update</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
